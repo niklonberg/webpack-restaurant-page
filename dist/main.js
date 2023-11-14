@@ -1,0 +1,1 @@
+(()=>{"use strict";!function(){const t=document.querySelector("#content"),e=document.createElement("h1");e.textContent="Mom's Outback Spaghetti-o's",t.appendChild(e)}()})();
