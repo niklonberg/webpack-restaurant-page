@@ -1,5 +1,5 @@
 import "./style.css";
-import heroImg from "./images/hero-img.jpg";
+import heroImg from "./images/treehouse.png";
 
 function renderHome() {
   const content = document.querySelector("#content");
