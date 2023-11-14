@@ -1,3 +1,7 @@
-.red-heading {
+@layer component, page, base;
+
+@import url(./css-components/treehouse.css);
+
+/* .red-heading {
   color: red;
-}
+} */
