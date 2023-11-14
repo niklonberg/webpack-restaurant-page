@@ -1,3 +1,3 @@
-import pageLoad from "./pageload.js";
+import renderHome from "./renderHome.js";
 
-pageLoad();
+renderHome();
