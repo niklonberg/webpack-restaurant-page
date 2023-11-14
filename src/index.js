@@ -1,3 +1,5 @@
 import renderHome from "./renderHome.js";
 
-renderHome();
+const main = document.querySelector("#content");
+
+renderHome(main);
