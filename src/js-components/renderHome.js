@@ -3,6 +3,7 @@ import treehouseImg from "../images/treehouse.png";
 import ElementFactory from "./ElementFactory.js";
 import createReviewArticle from "./createReviewArticle.js";
 import createDescList from "./createDescList.js";
+import createAddress from "./createAddress.js";
 
 function renderHome(element) {
   const heading = ElementFactory.createTextEle(
@@ -22,6 +23,7 @@ function renderHome(element) {
   );
   element.appendChild(reviewArticle);
 
+  /* this could be an argument given to renderHome?*/
   const openingHours = {
     monday: "8am - 8pm",
     tuesday: "6am - 6pm",
@@ -33,6 +35,9 @@ function renderHome(element) {
   };
   const descList = createDescList(openingHours);
   element.appendChild(descList);
+
+  const address = createAddress();
+  element.appendChild(address);
 }
 
 export default renderHome;
