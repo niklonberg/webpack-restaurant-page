@@ -22,8 +22,17 @@ function renderHome(element) {
   );
   element.appendChild(reviewArticle);
 
-  const testListObj = {};
-  const descList = createDescList(testListObj);
+  const openingHours = {
+    monday: "8am - 8pm",
+    tuesday: "6am - 6pm",
+    wednesday: "6am - 6pm",
+    thursday: "6am - 10pm",
+    friday: "9am - 11pm",
+    saturday: "10am - 11pm",
+    sunday: "10am - 11pm",
+  };
+  const descList = createDescList(openingHours);
+  element.appendChild(descList);
 }
 
 export default renderHome;
