@@ -26,10 +26,7 @@ function createAddress(addressObj) {
 
       case "tel":
       case "email":
-        const a = ElementFactory.createTextEle(
-          `${key}: ${addressObj[key]}`,
-          "a"
-        );
+        const a = ElementFactory.createAnchor(key, addressObj[key]);
         address.appendChild(a);
         break;
     }
