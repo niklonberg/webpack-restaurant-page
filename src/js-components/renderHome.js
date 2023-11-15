@@ -1,12 +1,9 @@
-import "./style.css";
-import treehouseImg from "./images/treehouse.png";
+import "../style.css";
+import treehouseImg from "../images/treehouse.png";
+import createHeading from "./createHeading.js";
 
 function renderHome(element) {
-  //each render function will use a makeHeader function
-  const heading = document.createElement("h1");
-  heading.textContent = `Andy's Acorngasmic Appetizers`;
-  heading.classList.add("red-heading");
-  //
+  const heading = createHeading("Andy's Acorntastic Appetizers");
   element.appendChild(heading);
 
   const reviewArticle = document.createElement("article");

@@ -1,4 +1,4 @@
-import renderHome from "./renderHome.js";
+import renderHome from "./js-components/renderHome.js";
 
 const main = document.querySelector("#content");
 
