@@ -8,7 +8,7 @@ function createReviewArticle(reviewer, text, image = null) {
     reviewArticle.appendChild(img);
   }
 
-  const p = ElementFactory.createParagraph(text);
+  const p = ElementFactory.createTextEle(text);
   reviewArticle.appendChild(p);
 
   const footer = document.createElement("footer");

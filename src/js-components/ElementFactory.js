@@ -1,15 +1,9 @@
 const ElementFactory = (function () {
-  const createHeading = (title, type = "h1", classname = "primary-heading") => {
-    const heading = document.createElement(type);
-    heading.classList.add(classname);
-    heading.textContent = title;
-    return heading;
-  };
-
-  const createParagraph = (text) => {
-    const p = document.createElement("p");
-    p.textContent = text;
-    return p;
+  const createTextEle = (text, type = "p", classname = "") => {
+    const ele = document.createElement(type);
+    if (classname) ele.classList.add(classname);
+    ele.textContent = text;
+    return ele;
   };
 
   const createImg = (imageSource, classname) => {
@@ -19,13 +13,12 @@ const ElementFactory = (function () {
     return img;
   };
 
-  const createFooter = () => {
+  const createFooter = (childEle) => {
     const footer = document.createElement("footer");
   };
 
   return {
-    createHeading,
-    createParagraph,
+    createTextEle,
     createImg,
   };
 })();

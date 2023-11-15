@@ -4,7 +4,11 @@ import ElementFactory from "./ElementFactory.js";
 import createReviewArticle from "./createReviewArticle.js";
 
 function renderHome(element) {
-  const heading = ElementFactory.createHeading("Andy's Acorntastic Appetizers");
+  const heading = ElementFactory.createTextEle(
+    "Andy's Acorntastic Appetizers",
+    "h1",
+    "primary-heading"
+  );
   element.appendChild(heading);
 
   const reviewArticle = createReviewArticle(
