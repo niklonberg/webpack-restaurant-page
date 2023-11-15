@@ -36,7 +36,16 @@ function renderHome(element) {
   const descList = createDescList(openingHours);
   element.appendChild(descList);
 
-  const address = createAddress();
+  /* this could be an argument given to renderHome?*/
+  const addressObj = {
+    title: "Location",
+    city: "Anytown",
+    state: "Toronto",
+    zip: 12345,
+    tel: 98765432,
+    email: "john.doe@example.com",
+  };
+  const address = createAddress(addressObj);
   element.appendChild(address);
 }
 
