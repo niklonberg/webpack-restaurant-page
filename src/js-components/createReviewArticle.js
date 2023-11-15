@@ -1,3 +1,5 @@
+import ElementFactory from "./ElementFactory.js";
+
 function createReviewArticle(reviewer, image = null) {
   const reviewArticle = document.createElement("article");
 
