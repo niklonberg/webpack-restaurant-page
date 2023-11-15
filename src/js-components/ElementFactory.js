@@ -12,9 +12,21 @@ const ElementFactory = (function () {
     return p;
   };
 
+  const createImg = (imageSource, classname) => {
+    const img = document.createElement("img");
+    img.src = imageSource;
+    img.classList.add(classname);
+    return img;
+  };
+
+  const createFooter = () => {
+    const footer = document.createElement("footer");
+  };
+
   return {
     createHeading,
     createParagraph,
+    createImg,
   };
 })();
 
