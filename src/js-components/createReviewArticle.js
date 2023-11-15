@@ -1,10 +1,12 @@
-function createReviewArticle(author, image = null) {
+function createReviewArticle(reviewer, image = null) {
   const reviewArticle = document.createElement("article");
 
-  const img = document.createElement("img");
-  img.src = image;
-  img.classList.add("treehouse-img");
-  reviewArticle.appendChild(img);
+  if (image !== null) {
+    const img = document.createElement("img");
+    img.src = image;
+    img.classList.add("treehouse-img");
+    reviewArticle.appendChild(img);
+  }
 
   const p = document.createElement("p");
   p.textContent = `Andy's with their own homebrewed syrup has the best pancakes around! 
@@ -15,7 +17,7 @@ function createReviewArticle(author, image = null) {
 
   const footer = document.createElement("footer");
   const cite = document.createElement("cite");
-  cite.textContent = "Goldilocks";
+  cite.textContent = reviewer;
   footer.appendChild(cite);
   reviewArticle.appendChild(footer);
 
