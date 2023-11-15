@@ -6,19 +6,22 @@ const ElementFactory = (function () {
     return ele;
   };
 
-  const createImg = (imageSource, classname) => {
-    const img = document.createElement("img");
-    img.src = imageSource;
-    img.classList.add(classname);
-    return img;
+  const createContainerEle = (type = "div", classname = "") => {
+    const ele = document.createElement(type);
+    if (classname) ele.classList.add(classname);
+    return ele;
   };
 
-  const createFooter = (childEle) => {
-    const footer = document.createElement("footer");
+  const createImg = (imageSource, classname = "") => {
+    const img = document.createElement("img");
+    img.src = imageSource;
+    if (classname) img.classList.add(classname);
+    return img;
   };
 
   return {
     createTextEle,
+    createContainerEle,
     createImg,
   };
 })();

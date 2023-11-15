@@ -11,9 +11,8 @@ function createReviewArticle(reviewer, text, image = null) {
   const p = ElementFactory.createTextEle(text);
   reviewArticle.appendChild(p);
 
-  const footer = document.createElement("footer");
-  const cite = document.createElement("cite");
-  cite.textContent = reviewer;
+  const footer = ElementFactory.createContainerEle("footer");
+  const cite = ElementFactory.createTextEle(reviewer, "cite");
   footer.appendChild(cite);
   reviewArticle.appendChild(footer);
 

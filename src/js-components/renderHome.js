@@ -2,6 +2,7 @@ import "../style.css";
 import treehouseImg from "../images/treehouse.png";
 import ElementFactory from "./ElementFactory.js";
 import createReviewArticle from "./createReviewArticle.js";
+import createDescList from "./createDescList.js";
 
 function renderHome(element) {
   const heading = ElementFactory.createTextEle(
@@ -20,6 +21,9 @@ function renderHome(element) {
     treehouseImg
   );
   element.appendChild(reviewArticle);
+
+  const testListObj = {};
+  const descList = createDescList(testListObj);
 }
 
 export default renderHome;
