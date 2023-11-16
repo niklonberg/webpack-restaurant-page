@@ -1,4 +1,5 @@
 import renderHome from "./js-components/renderHome.js";
+import renderMenu from "./js-components/renderMenu.js";
 
 const main = document.querySelector("#content");
 const nav = document.querySelector("#nav");
@@ -15,4 +16,4 @@ nav.addEventListener("click", (event) => {
   }
 });
 
-renderHome(main);
+renderMenu(main);
