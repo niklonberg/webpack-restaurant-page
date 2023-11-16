@@ -1,4 +1,4 @@
-import "../style.css";
+import "../style.css"; /* needed? */
 import treehouseImg from "../images/treehouse.png";
 import ElementFactory from "./ElementFactory.js";
 import createReviewArticle from "./createReviewArticle.js";

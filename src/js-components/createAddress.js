@@ -16,6 +16,7 @@ function createAddress(addressObj) {
       case "city":
       case "state":
       case "zip":
+      case "role":
         const p = ElementFactory.createTextEle(
           `${capKey}: ${addressObj[key]}`,
           "p"
