@@ -23,7 +23,6 @@ function renderHome(element) {
   );
   element.appendChild(reviewArticle);
 
-  /* this could be an argument given to renderHome?*/
   const openingHours = {
     monday: "8am - 8pm",
     tuesday: "6am - 6pm",
@@ -33,10 +32,9 @@ function renderHome(element) {
     saturday: "10am - 11pm",
     sunday: "10am - 11pm",
   };
-  const descList = createDescList(openingHours);
+  const descList = createDescList("Opening Hours", openingHours);
   element.appendChild(descList);
 
-  /* this could be an argument given to renderHome?*/
   const addressObj = {
     title: "Location",
     city: "Anytown",

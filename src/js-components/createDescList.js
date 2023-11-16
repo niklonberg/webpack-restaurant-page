@@ -1,6 +1,8 @@
 import ElementFactory from "./ElementFactory.js";
 
-function createDescList(descObj) {
+function createDescList(title, descObj) {
+  const div = ElementFactory.createContainerEle();
+  const h2 = ElementFactory.createTextEle(title, "h2");
   const dl = ElementFactory.createContainerEle("dl");
 
   for (const key in descObj) {
@@ -9,7 +11,9 @@ function createDescList(descObj) {
     dl.append(dt, dd);
   }
 
-  return dl;
+  div.append(h2, dl);
+
+  return div;
 }
 
 export default createDescList;

@@ -1,16 +1,15 @@
 import ElementFactory from "./ElementFactory.js";
+import StringHelper from "./StringHelper.js";
 
 function createAddress(addressObj) {
   const address = ElementFactory.createContainerEle("address");
 
   for (const key in addressObj) {
     /* repeating ourselves here */
+    const capKey = StringHelper.capitalize(key);
     switch (key) {
       case "title":
-        const h2 = ElementFactory.createTextEle(
-          `${key}: ${addressObj[key]}`,
-          "h2"
-        );
+        const h2 = ElementFactory.createTextEle(addressObj[key], "h2");
         address.appendChild(h2);
         break;
 
@@ -18,7 +17,7 @@ function createAddress(addressObj) {
       case "state":
       case "zip":
         const p = ElementFactory.createTextEle(
-          `${key}: ${addressObj[key]}`,
+          `${capKey}: ${addressObj[key]}`,
           "p"
         );
         address.appendChild(p);
@@ -26,7 +25,7 @@ function createAddress(addressObj) {
 
       case "tel":
       case "email":
-        const a = ElementFactory.createAnchor(key, addressObj[key]);
+        const a = ElementFactory.createAnchor(capKey, addressObj[key]);
         address.appendChild(a);
         break;
     }
