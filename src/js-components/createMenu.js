@@ -1,8 +1,22 @@
 import ElementFactory from "./ElementFactory.js";
 
 function createMenu(menuObj) {
-  for (const key in menuObj) {
+  const sections = [];
+  for (const category in menuObj) {
+    const section = ElementFactory.createContainerEle("section", category);
+    const categoryHeader = ElementFactory.createTextEle(category, "h2");
+    section.appendChild(categoryHeader);
+    menuObj[category].forEach((item) => {
+      const article = ElementFactory.createContainerEle("article");
+      const itemHeading = ElementFactory.createTextEle(item.title, "h3");
+      const itemDesc = ElementFactory.createTextEle(item.desc);
+      const itemPrice = ElementFactory.createTextEle(item.price);
+      article.append(itemHeading, itemDesc, itemPrice);
+      section.appendChild(article);
+    });
+    sections.push(section);
   }
+  return sections;
 }
 
 export default createMenu;
