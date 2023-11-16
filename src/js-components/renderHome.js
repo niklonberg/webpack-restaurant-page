@@ -35,6 +35,7 @@ function renderHome(element) {
   const descList = createDescList("Opening Hours", openingHours);
   element.appendChild(descList);
 
+  const footer = ElementFactory.createContainerEle("footer");
   const addressObj = {
     title: "Location",
     city: "Anytown",
@@ -44,7 +45,8 @@ function renderHome(element) {
     email: "john.doe@example.com",
   };
   const address = createAddress(addressObj);
-  element.appendChild(address);
+  footer.appendChild(address);
+  element.appendChild(footer);
 }
 
 export default renderHome;
