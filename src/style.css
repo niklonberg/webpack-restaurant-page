@@ -1,7 +1,4 @@
 @layer component, page, base;
 
 @import url(./css-components/treehouse.css);
-
-/* .red-heading {
-  color: red;
-} */
+@import url(./css-components/nav.css);
