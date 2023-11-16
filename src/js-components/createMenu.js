@@ -1,10 +1,14 @@
 import ElementFactory from "./ElementFactory.js";
+import StringHelper from "./StringHelper.js";
 
 function createMenu(menuObj) {
   const sections = [];
   for (const category in menuObj) {
     const section = ElementFactory.createContainerEle("section", category);
-    const categoryHeader = ElementFactory.createTextEle(category, "h2");
+    const categoryHeader = ElementFactory.createTextEle(
+      StringHelper.capitalize(category),
+      "h2"
+    );
     section.appendChild(categoryHeader);
     menuObj[category].forEach((item) => {
       const article = ElementFactory.createContainerEle("article");

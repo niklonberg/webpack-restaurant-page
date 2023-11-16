@@ -32,7 +32,7 @@ function renderMenu(element) {
         price: "$3",
       },
     ],
-    main: [
+    mains: [
       {
         title: "Acorn Squash Stuffed with Wild Rice and Nuts",
         desc: "Roasted acorn squash halves filled with a savory mixture of wild rice, chopped nuts, dried fruits, and herbs.",
