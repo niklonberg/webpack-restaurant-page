@@ -1,4 +1,5 @@
 @layer component, page, base;
 
+@import url(./css-components/base.css);
 @import url(./css-components/treehouse.css);
 @import url(./css-components/nav.css);
