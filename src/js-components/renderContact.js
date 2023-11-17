@@ -23,7 +23,6 @@ function renderContact(element) {
       role: "Chef",
       tel: 5555555555,
       email: "perfectlyRealEmail@notFake.com",
-      /* add picture */
     },
   ];
   employees.forEach((employee) => {
