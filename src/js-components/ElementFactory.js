@@ -19,16 +19,19 @@ const ElementFactory = (function () {
     return img;
   };
 
-  const createAnchor = (type, link) => {
+  const createAnchor = (capType, type, link) => {
+    const span = document.createElement("span");
+    span.textContent = `${capType}: `;
     const a = document.createElement("a");
-    a.textContent = `${type}: ${link}`;
+    a.textContent = link;
     type === "tel"
       ? (a.href = "tel:" + link)
       : type === "email"
       ? (a.href = "mailto:" + link)
       : null;
 
-    return a;
+    span.appendChild(a);
+    return span;
   };
 
   return {
