@@ -1,4 +1,5 @@
 import ElementFactory from "./ElementFactory.js";
+import StringHelper from "./StringHelper.js";
 
 function createDescList(title, descObj) {
   const div = ElementFactory.createContainerEle("div", "desc");
@@ -6,7 +7,7 @@ function createDescList(title, descObj) {
   const dl = ElementFactory.createContainerEle("dl");
 
   for (const key in descObj) {
-    const dt = ElementFactory.createTextEle(key, "dt");
+    const dt = ElementFactory.createTextEle(StringHelper.capitalize(key), "dt");
     const dd = ElementFactory.createTextEle(descObj[key], "dd");
     dl.append(dt, dd);
   }
