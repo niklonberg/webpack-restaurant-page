@@ -1,7 +1,7 @@
 import ElementFactory from "./ElementFactory.js";
 
 function createDescList(title, descObj) {
-  const div = ElementFactory.createContainerEle();
+  const div = ElementFactory.createContainerEle("div", "desc");
   const h2 = ElementFactory.createTextEle(title, "h2");
   const dl = ElementFactory.createContainerEle("dl");
 
