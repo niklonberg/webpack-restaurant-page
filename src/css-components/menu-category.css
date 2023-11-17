@@ -1,0 +1,26 @@
+@layer component {
+  .menu-category {
+    padding: var(--l-gap) calc(2 * var(--l-gap));
+  }
+
+  .menu-category p {
+    max-width: 45ch;
+  }
+
+  .price {
+    position: relative;
+    margin-left: var(--m-gap);
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  .price::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    bottom: -4px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: 3px;
+  }
+}

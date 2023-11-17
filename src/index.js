@@ -21,4 +21,4 @@ nav.addEventListener("click", (event) => {
   }
 });
 
-renderHome(main);
+renderMenu(main);
