@@ -1,0 +1,5 @@
+@layer component {
+  .contacts {
+    padding: var(--l-gap) calc(2 * var(--l-gap));
+  }
+}

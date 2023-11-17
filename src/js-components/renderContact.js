@@ -10,7 +10,7 @@ function renderContact(element) {
   );
   element.appendChild(heading);
 
-  const section = ElementFactory.createContainerEle("section");
+  const section = ElementFactory.createContainerEle("section", "contacts");
   const employees = [
     {
       title: "Mama Squirrel",
@@ -23,6 +23,18 @@ function renderContact(element) {
       role: "Chef",
       tel: 5555555555,
       email: "perfectlyRealEmail@notFake.com",
+    },
+    {
+      title: "Baby Squirrel",
+      role: "Waiter",
+      tel: 4444444444,
+      email: "maybeRealEmail@notFake.com",
+    },
+    {
+      title: "Distant Cousin Squirrel",
+      role: "Washer",
+      tel: 4444444443,
+      email: "maybeNotRealEmail@notFake.com",
     },
   ];
   employees.forEach((employee) => {

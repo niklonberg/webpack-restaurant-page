@@ -1,6 +1,7 @@
 @layer component {
   .primary-heading {
     background-color: yellow;
+    text-align: center;
     width: fit-content;
     padding: var(--sm-gap) var(--l-gap);
   }
