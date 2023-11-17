@@ -1,8 +1,8 @@
 import ElementFactory from "./ElementFactory.js";
 import StringHelper from "./StringHelper.js";
 
-function createAddress(addressObj) {
-  const address = ElementFactory.createContainerEle("address");
+function createAddress(addressObj, classname) {
+  const address = ElementFactory.createContainerEle("address", classname);
 
   for (const key in addressObj) {
     /* repeating ourselves here */

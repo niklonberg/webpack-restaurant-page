@@ -21,4 +21,4 @@ nav.addEventListener("click", (event) => {
   }
 });
 
-renderMenu(main);
+renderContact(main);
