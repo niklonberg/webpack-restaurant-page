@@ -1,4 +1,12 @@
 @layer base {
+  @font-face {
+    font-family: "Josefin Sans";
+    src: url(../fonts/JosefinSans-VariableFont_wght.ttf) format("ttf"),
+      url(../fonts/JosefinSans-Italic-VariableFont_wght.ttf) format("ttf");
+    font-weight: 600;
+    font-style: normal;
+  }
+
   :root {
     --primary: brown;
     --secondary: lightbrown;
@@ -18,7 +26,7 @@
   }
 
   body {
-    font-family: "Potta One", system-ui, sans-serif;
+    font-family: "Josefin Sans", system-ui, sans-serif;
     background-color: var(--primary);
     color: var(--primary-contrast);
     margin: 0;
