@@ -8,9 +8,9 @@
   }
 
   :root {
-    --primary: brown;
-    --secondary: lightbrown;
-    --tertiary: yellow;
+    --primary: #edb05b;
+    --secondary: #84440f;
+    --tertiary: #fea832;
 
     --sm-gap: 10px;
     --m-gap: 20px;
