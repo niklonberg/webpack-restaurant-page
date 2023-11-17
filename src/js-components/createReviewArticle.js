@@ -1,7 +1,7 @@
 import ElementFactory from "./ElementFactory.js";
 
 function createReviewArticle(reviewer, text, image = null) {
-  const reviewArticle = document.createElement("article");
+  const reviewArticle = ElementFactory.createContainerEle("article", "review");
 
   if (image !== null) {
     const img = ElementFactory.createImg(image, "treehouse-img");
