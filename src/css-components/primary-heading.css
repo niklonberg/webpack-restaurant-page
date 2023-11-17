@@ -3,6 +3,5 @@
     background-color: yellow;
     width: fit-content;
     padding: var(--sm-gap) var(--l-gap);
-    border-radius: 1000px;
   }
 }
