@@ -1,0 +1,15 @@
+@layer component {
+  address {
+    margin-bottom: var(--l-gap);
+  }
+
+  address h2 {
+    margin: 0;
+    padding-left: var(--m-gap);
+  }
+
+  address span {
+    display: block;
+    margin-block: 16px;
+  }
+}

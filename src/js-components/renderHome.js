@@ -35,7 +35,7 @@ function renderHome(element) {
   const descList = createDescList("Opening Hours", openingHours);
   element.appendChild(descList);
 
-  const footer = ElementFactory.createContainerEle("footer");
+  const footer = ElementFactory.createContainerEle("footer", "footer");
   const addressObj = {
     title: "Location",
     city: "Anytown",
