@@ -21,4 +21,4 @@ nav.addEventListener("click", (event) => {
   }
 });
 
-renderContact(main);
+renderHome(main);
