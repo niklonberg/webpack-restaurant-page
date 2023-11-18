@@ -1,4 +1,3 @@
-import treehouseImg from "../images/treehouse.png";
 import ElementFactory from "./ElementFactory.js";
 import createAddress from "./createAddress";
 
