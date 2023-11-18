@@ -1,0 +1,11 @@
+@layer component {
+  a {
+    color: var(--primary); /* Use primary color for text */
+    padding: calc(0.5 * var(--sm-gap)) calc(0.5 * var(--m-gap));
+    border-radius: var(--sm-br);
+  }
+
+  a:hover {
+    opacity: 0.7;
+  }
+}
