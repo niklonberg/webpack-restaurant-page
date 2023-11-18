@@ -5,7 +5,6 @@ function createAddress(addressObj, classname) {
   const address = ElementFactory.createContainerEle("address", classname);
 
   for (const key in addressObj) {
-    /* repeating ourselves here */
     const capKey = StringHelper.capitalize(key);
     switch (key) {
       case "title":

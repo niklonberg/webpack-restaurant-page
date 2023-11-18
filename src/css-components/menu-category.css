@@ -10,6 +10,7 @@
   .price {
     position: relative;
     margin-left: var(--m-gap);
+    margin-top: 0;
     font-weight: bold;
     display: inline-block;
   }
